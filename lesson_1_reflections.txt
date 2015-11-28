@@ -1,0 +1,41 @@
+How did viewing a diff between two versoni of a file help you see the bug that was introduced?
+only shows differences which make it easier to spot changes and therefore mistakes
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+easier to do diffs
+
+git log
+git config --global color.ut auto #shows colors in diff
+git diff id1 id2
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+makes sense
+
+get log --stat #show time info
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+so you can see how changes are related
+
+get clone
+
+How can you use the commands git log and git diff to view the history of files?
+log tells about changes and diff shows you what the changes are
+
+git checkout #get a previous version
+
+How might using version control make you more confident to make changes that could break something?
+
+you can test previous versions to see where the program went bad
+
+Now that you have your workspace set up, what do you want to try using Git for?
+the tutorial
+
+git init #in the directory you want to create the .git file
+git status #shows which files have changed
+
+What happens when you initialize a repository? Why do you need to do it?
+create the .git file that contains the meta data for the git repository
