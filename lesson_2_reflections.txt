@@ -73,3 +73,41 @@ like this:
 Resolves: #123
 See also: #456, #789
 
+---------
+get diff #with no arguments compares working directory to staging area to see unstaged changes
+get diff --stage #compares staged files with repository to make sure you've made all the changes
+get diff --hard # wipes all changes in working directory 
+                # - only run after running get diff and get diff --staged
+get checkout master #gets the original
+
+How can you use the staging area to make sure you have one commit per logical change?
+git diff --staged
+
+git branch #shows branches
+git branch easy-mode #creates easy-mode branch
+git checkout easy-mode #sends updates to easy-mode branch
+git checkout -b new_branch_name #is the same as the two previous commands
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help? 
+changes can be separated from the working code
+
+git log --graph --oneline master coins #visualize two branches master and coins
+
+How do the diagrams help you visualize the branch structure?
+you can see what features/bug fixes happened at what time in the product development
+
+git merge master coins #creates a merged version of the two branches
+git show ID #shows the differences between the commit and its parent
+git branch -d coins #deletes the merged label - not the commits
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+to see where the merge occured
+
+git log -n 1  #only shows 1 log entry
+git merge master easy-mode #updates easy-mode with latest changes to master
+if conflicts occur then look at the source code which will be marked up with ==== symbols
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Pros: saves alot of trouble
+Cons: can be confusing on how to fix conflicts
+
