@@ -16,3 +16,6 @@ you can take it with you and then push the changes when you are able to reach gi
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 email the files back and forth. github provides tracibility and I think email would be harder
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+when working with others. quickness to directly change the master, and carefully to first create a separate branch
