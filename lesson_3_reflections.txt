@@ -10,3 +10,6 @@ Describe the differences between forks, clones, and branches. When would you use
 forks will copy someone elses repository to your web repository - used for web server backup
 clones will copy a repository to your pc repository - used for pc modification of changes
 branches will create variations off the master branch - used for changes without affecting the master branch
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+you can take it with you and then push the changes when you are able to reach github
