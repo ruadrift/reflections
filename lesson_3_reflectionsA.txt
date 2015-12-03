@@ -1,0 +1,31 @@
+goto github.com to set up a user account
+follow setup instrutions to  link to desktop git
+git config --global user.name "ruadrift"
+git config --global user.email "joe.dante@gmail.com
+git config --global credential.helper wincred
+
+must first create a repository on the github web page
+git remote #lists all the remote
+git remote add origin web-addr-from-web-page #orgin is the common name for a single repository
+git remote # will show the origin remote has been created.
+git remote -v #location of remote
+git push origin master #web page will show all files
+git pull origin master #brings github down to pc
+
+you can fork other peoples repositories from the github web page
+and then clone them to your pc : git clone https://github.com/ruadrift/recipes.git
+In doing so the remote is setup. "git remote -v" show this:
+	origin  https://github.com/ruadrift/recipes.git (fetch)
+	origin  https://github.com/ruadrift/recipes.git (push)
+
+git pull origin master is the same as
+	git fetch origin
+	git merge master origin/master
+after doing a "git fetch origin"
+	git login origin/master
+	git diff origin/master master
+git merge master origin/master #try to merge
+	edit conflicts
+	git add filename
+	git commit
+	git push origin master
