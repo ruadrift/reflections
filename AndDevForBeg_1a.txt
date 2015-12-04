@@ -1,0 +1,43 @@
+<TextView
+    android:text="Happy Birthday is it really you birhday?Happy Birthday is it really you birhday?"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:textAppearance="?android:textAppearanceLarge"
+    />
+
+<TextView
+    android:text="I got you a free hug. Surprise!"
+    android:background="#33691e"
+    android:textColor="#ffc107"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:textAppearanceLarge"
+    
+    />
+
+    Link to the XML Visualizer http://labs.udacity.com/android-visualizer/#/android/text-color
+    Material Design color pallette http://www.google.com/design/spec/style/color.html#color-color-palette
+
+• ?android:textAppearanceSmall is currently 14sp
+• ?android:textAppearanceMedium is currently 18sp
+• ?android:textAppearanceLarge is currently 22sp
+
+Link to the common views Cheatsheet https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view
+
+<ImageView
+    android:src="@drawable/cake"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:scaleType="centerCrop"
+    />
+
+    google "textview android" #for documentation on Android
+<TextView
+    android:text="Oh the possibilities of TextView!"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="36sp" 
+    android:textStyle="bold"
+    />
+    
