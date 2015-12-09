@@ -1,0 +1,42 @@
+Final bithday card without button
+Step 1: Select the Views
+Step 2: Position the views
+step 3: Style the views
+
+order of entries determine how they appear on screen. Image last would have overwritten text views
+
+width and height = match parent & scaleType = center crop enlarge the image to
+the entire size of the screen and also let rotation and tablet view size properly.
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/androidparty"
+        android:scaleType="centerCrop"
+        />
+    <TextView android:text="Happy Birthday Raffie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        />
+      <TextView android:text="From Big Daddy"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+          android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>
