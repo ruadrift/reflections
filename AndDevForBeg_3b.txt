@@ -1,0 +1,47 @@
+/**
+* Create summary of the order.
+*
+* @param name            on the order
+* @param price           of the order
+* @param addWhippedCream is whether or not to add whipped cream to the coffee
+* @param addChocolate    is whether or not to add chocolate to the coffee
+* @return text summary
+*/
+private String createOrderSummary(String name, int price, boolean addWhippedCream,
+       boolean addChocolate) {
+   String priceMessage = getString(R.string.order_summary_name, name);
+   priceMessage += "\n" + getString(R.string.order_summary_whipped_cream, addWhippedCream);
+   priceMessage += "\n" + getString(R.string.order_summary_chocolate, addChocolate);
+   priceMessage += "\n" + getString(R.string.order_summary_quantity, quantity);
+   priceMessage += "\n" + getString(R.string.order_summary_price,
+           NumberFormat.getCurrencyInstance().format(price));
+   priceMessage += "\n" + getString(R.string.thank_you);
+   return priceMessage;
+}
+
+Note we get the local currency with NumberFormat.getCurrencyInstance().format(price));.
+
+To change to the device to use the Spanish locale, go to Settings app > Languages & input > Language. That lists all the available languages on your device. 
+
+Sample code to send email
+Note Toast.makeText is like an alert in javascript
+
+...
+        String mail[] ={"abc@email.com"};
+        String subject =getString(R.string.order_summary_email_subject,name);
+        composeEmail(mail,subject,priceMessage);
+//        display(quantity);
+//        displayPrice(quantity*5);
+    }
+    public void composeEmail(String[] addresses, String subject, String msg) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+//        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT,msg);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+        else
+            Toast.makeText(this, "No email clients installed.", Toast.LENGTH_SHORT).show();
+    }
