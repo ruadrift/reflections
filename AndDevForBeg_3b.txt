@@ -1,3 +1,8 @@
+The complete code to the just java app can be found here
+
+https://github.com/udacity/Just-Java/commit/d60ff1e2278d3ceee732374cd14631d38e4c0e53
+
+
 /**
 * Create summary of the order.
 *
